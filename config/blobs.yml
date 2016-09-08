@@ -1,1 +1,9 @@
---- {}
+---
+go/go1.6.3.darwin-amd64.tar.gz:
+  object_id: ba2e55a1-c707-4aac-ac21-4efcffd2f41b
+  sha: 998c82ce6f2b856bc0c1e508adc27625017e52e7
+  size: 84755819
+redis/redis-3.2.3.tar.gz:
+  object_id: 8370392f-2696-497a-b181-91597496ab7b
+  sha: 92d6d93ef2efc91e595c8bf578bf72baff397507
+  size: 1541401

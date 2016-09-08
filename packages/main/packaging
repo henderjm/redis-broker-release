@@ -16,7 +16,7 @@ BINARIES=( broker processmonitor agent backup restore configmigrator )
 for BINARY in "${BINARIES[@]}"
 do
   go install ${PACKAGE_NAME}/cmd/${BINARY}
-  done
+done
 
   # clean up source artifacts
   # rm -rf ${BOSH_INSTALL_TARGET}/src ${BOSH_INSTALL_TARGET}/pkg

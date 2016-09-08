@@ -1,5 +1,9 @@
 ---
 name: broker
 templates:
+  ctl: bin/ctl
 
 packages:
+- main
+- go
+- redis

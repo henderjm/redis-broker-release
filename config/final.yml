@@ -1,6 +1,6 @@
 ---
 final_name: redis-broker-bosh
 blobstore:
-  provider: local 
+  provider: local
   options:
-    blobstore_path: $HOME/blobstore/broker
+    blobstore_path: ./blobstore/broker

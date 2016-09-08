@@ -1,7 +1,7 @@
 ---
 name: broker
 templates:
-  ctl: bin/ctl
+  ctl.erb: bin/ctl
 
 packages:
 - main

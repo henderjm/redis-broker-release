@@ -1,0 +1,7 @@
+me: redis-broker
+
+dependencies:
+- go
+
+  files:
+- redis-broker/**/*.go

@@ -1,0 +1,5 @@
+---
+name: go
+dependencies: []
+files:
+- go/go1.6.3.darwin-amd64.tar.gz

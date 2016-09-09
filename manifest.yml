@@ -9,11 +9,837 @@ networks:
 - name: default
   subnets:
   - cloud_properties:
-      name: default
-    range: 10.244.0.64/30
-    dns: [8.8.8.8]
-    gateway: 10.244.0.65
-    static: [10.244.0.66]
+      name: random
+    range: 10.244.9.0/30
+    reserved:
+    - 10.244.9.1
+    static:
+    - 10.244.9.2
+  - cloud_properties:
+      name: random
+    range: 10.244.9.4/30
+    reserved:
+    - 10.244.9.5
+    static:
+    - 10.244.9.6
+  - cloud_properties:
+      name: random
+    range: 10.244.9.8/30
+    reserved:
+    - 10.244.9.9
+    static:
+    - 10.244.9.10
+  - cloud_properties:
+      name: random
+    range: 10.244.9.12/30
+    reserved:
+    - 10.244.9.13
+    static:
+    - 10.244.9.14
+  - cloud_properties:
+      name: random
+    range: 10.244.9.16/30
+    reserved:
+    - 10.244.9.17
+    static:
+    - 10.244.9.18
+  - cloud_properties:
+      name: random
+    range: 10.244.9.20/30
+    reserved:
+    - 10.244.9.21
+    static:
+    - 10.244.9.22
+  - cloud_properties:
+      name: random
+    range: 10.244.9.24/30
+    reserved:
+    - 10.244.9.25
+    static:
+    - 10.244.9.26
+  - cloud_properties:
+      name: random
+    range: 10.244.9.28/30
+    reserved:
+    - 10.244.9.29
+    static:
+    - 10.244.9.30
+  - cloud_properties:
+      name: random
+    range: 10.244.9.32/30
+    reserved:
+    - 10.244.9.33
+    static:
+    - 10.244.9.34
+  - cloud_properties:
+      name: random
+    range: 10.244.9.36/30
+    reserved:
+    - 10.244.9.37
+    static:
+    - 10.244.9.38
+  - cloud_properties:
+      name: random
+    range: 10.244.9.40/30
+    reserved:
+    - 10.244.9.41
+    static:
+    - 10.244.9.42
+  - cloud_properties:
+      name: random
+    range: 10.244.9.44/30
+    reserved:
+    - 10.244.9.45
+    static:
+    - 10.244.9.46
+  - cloud_properties:
+      name: random
+    range: 10.244.9.48/30
+    reserved:
+    - 10.244.9.49
+    static:
+    - 10.244.9.50
+  - cloud_properties:
+      name: random
+    range: 10.244.9.52/30
+    reserved:
+    - 10.244.9.53
+    static:
+    - 10.244.9.54
+  - cloud_properties:
+      name: random
+    range: 10.244.9.56/30
+    reserved:
+    - 10.244.9.57
+    static:
+    - 10.244.9.58
+  - cloud_properties:
+      name: random
+    range: 10.244.9.60/30
+    reserved:
+    - 10.244.9.61
+    static:
+    - 10.244.9.62
+  - cloud_properties:
+      name: random
+    range: 10.244.9.64/30
+    reserved:
+    - 10.244.9.65
+    static:
+    - 10.244.9.66
+  - cloud_properties:
+      name: random
+    range: 10.244.9.68/30
+    reserved:
+    - 10.244.9.69
+    static:
+    - 10.244.9.70
+  - cloud_properties:
+      name: random
+    range: 10.244.9.72/30
+    reserved:
+    - 10.244.9.73
+    static:
+    - 10.244.9.74
+  - cloud_properties:
+      name: random
+    range: 10.244.9.76/30
+    reserved:
+    - 10.244.9.77
+    static:
+    - 10.244.9.78
+  - cloud_properties:
+      name: random
+    range: 10.244.9.80/30
+    reserved:
+    - 10.244.9.81
+    static:
+    - 10.244.9.82
+  - cloud_properties:
+      name: random
+    range: 10.244.9.84/30
+    reserved:
+    - 10.244.9.85
+    static:
+    - 10.244.9.86
+  - cloud_properties:
+      name: random
+    range: 10.244.9.88/30
+    reserved:
+    - 10.244.9.89
+    static:
+    - 10.244.9.90
+  - cloud_properties:
+      name: random
+    range: 10.244.9.92/30
+    reserved:
+    - 10.244.9.93
+    static:
+    - 10.244.9.94
+  - cloud_properties:
+      name: random
+    range: 10.244.9.96/30
+    reserved:
+    - 10.244.9.97
+    static:
+    - 10.244.9.98
+  - cloud_properties:
+      name: random
+    range: 10.244.9.100/30
+    reserved:
+    - 10.244.9.101
+    static:
+    - 10.244.9.102
+  - cloud_properties:
+      name: random
+    range: 10.244.9.104/30
+    reserved:
+    - 10.244.9.105
+    static:
+    - 10.244.9.106
+  - cloud_properties:
+      name: random
+    range: 10.244.9.108/30
+    reserved:
+    - 10.244.9.109
+    static:
+    - 10.244.9.110
+  - cloud_properties:
+      name: random
+    range: 10.244.9.112/30
+    reserved:
+    - 10.244.9.113
+    static:
+    - 10.244.9.114
+  - cloud_properties:
+      name: random
+    range: 10.244.9.116/30
+    reserved:
+    - 10.244.9.117
+    static:
+    - 10.244.9.118
+  - cloud_properties:
+      name: random
+    range: 10.244.9.120/30
+    reserved:
+    - 10.244.9.121
+    static:
+    - 10.244.9.122
+  - cloud_properties:
+      name: random
+    range: 10.244.9.124/30
+    reserved:
+    - 10.244.9.125
+    static:
+    - 10.244.9.126
+  - cloud_properties:
+      name: random
+    range: 10.244.9.128/30
+    reserved:
+    - 10.244.9.129
+    static:
+    - 10.244.9.130
+  - cloud_properties:
+      name: random
+    range: 10.244.9.132/30
+    reserved:
+    - 10.244.9.133
+    static:
+    - 10.244.9.134
+  - cloud_properties:
+      name: random
+    range: 10.244.9.136/30
+    reserved:
+    - 10.244.9.137
+    static:
+    - 10.244.9.138
+  - cloud_properties:
+      name: random
+    range: 10.244.9.140/30
+    reserved:
+    - 10.244.9.141
+    static:
+    - 10.244.9.142
+  - cloud_properties:
+      name: random
+    range: 10.244.9.144/30
+    reserved:
+    - 10.244.9.145
+    static:
+    - 10.244.9.146
+  - cloud_properties:
+      name: random
+    range: 10.244.9.148/30
+    reserved:
+    - 10.244.9.149
+    static:
+    - 10.244.9.150
+  - cloud_properties:
+      name: random
+    range: 10.244.9.152/30
+    reserved:
+    - 10.244.9.153
+    static:
+    - 10.244.9.154
+  - cloud_properties:
+      name: random
+    range: 10.244.9.156/30
+    reserved:
+    - 10.244.9.157
+    static:
+    - 10.244.9.158
+  - cloud_properties:
+      name: random
+    range: 10.244.9.160/30
+    reserved:
+    - 10.244.9.161
+    static:
+    - 10.244.9.162
+  - cloud_properties:
+      name: random
+    range: 10.244.9.164/30
+    reserved:
+    - 10.244.9.165
+    static:
+    - 10.244.9.166
+  - cloud_properties:
+      name: random
+    range: 10.244.9.168/30
+    reserved:
+    - 10.244.9.169
+    static:
+    - 10.244.9.170
+  - cloud_properties:
+      name: random
+    range: 10.244.9.172/30
+    reserved:
+    - 10.244.9.173
+    static:
+    - 10.244.9.174
+  - cloud_properties:
+      name: random
+    range: 10.244.9.176/30
+    reserved:
+    - 10.244.9.177
+    static:
+    - 10.244.9.178
+  - cloud_properties:
+      name: random
+    range: 10.244.9.180/30
+    reserved:
+    - 10.244.9.181
+    static:
+    - 10.244.9.182
+  - cloud_properties:
+      name: random
+    range: 10.244.9.184/30
+    reserved:
+    - 10.244.9.185
+    static:
+    - 10.244.9.186
+  - cloud_properties:
+      name: random
+    range: 10.244.9.188/30
+    reserved:
+    - 10.244.9.189
+    static:
+    - 10.244.9.190
+  - cloud_properties:
+      name: random
+    range: 10.244.9.192/30
+    reserved:
+    - 10.244.9.193
+    static:
+    - 10.244.9.194
+  - cloud_properties:
+      name: random
+    range: 10.244.9.196/30
+    reserved:
+    - 10.244.9.197
+    static:
+    - 10.244.9.198
+  - cloud_properties:
+      name: random
+    range: 10.244.9.200/30
+    reserved:
+    - 10.244.9.201
+    static:
+    - 10.244.9.202
+  - cloud_properties:
+      name: random
+    range: 10.244.9.204/30
+    reserved:
+    - 10.244.9.205
+    static:
+    - 10.244.9.206
+  - cloud_properties:
+      name: random
+    range: 10.244.9.208/30
+    reserved:
+    - 10.244.9.209
+    static:
+    - 10.244.9.210
+  - cloud_properties:
+      name: random
+    range: 10.244.9.212/30
+    reserved:
+    - 10.244.9.213
+    static:
+    - 10.244.9.214
+  - cloud_properties:
+      name: random
+    range: 10.244.9.216/30
+    reserved:
+    - 10.244.9.217
+    static:
+    - 10.244.9.218
+  - cloud_properties:
+      name: random
+    range: 10.244.9.220/30
+    reserved:
+    - 10.244.9.221
+    static:
+    - 10.244.9.222
+  - cloud_properties:
+      name: random
+    range: 10.244.9.224/30
+    reserved:
+    - 10.244.9.225
+    static:
+    - 10.244.9.226
+  - cloud_properties:
+      name: random
+    range: 10.244.9.228/30
+    reserved:
+    - 10.244.9.229
+    static:
+    - 10.244.9.230
+  - cloud_properties:
+      name: random
+    range: 10.244.9.232/30
+    reserved:
+    - 10.244.9.233
+    static:
+    - 10.244.9.234
+  - cloud_properties:
+      name: random
+    range: 10.244.9.236/30
+    reserved:
+    - 10.244.9.237
+    static:
+    - 10.244.9.238
+  - cloud_properties:
+      name: random
+    range: 10.244.9.240/30
+    reserved:
+    - 10.244.9.241
+    static:
+    - 10.244.9.242
+  - cloud_properties:
+      name: random
+    range: 10.244.9.244/30
+    reserved:
+    - 10.244.9.245
+    static:
+    - 10.244.9.246
+  - cloud_properties:
+      name: random
+    range: 10.244.9.248/30
+    reserved:
+    - 10.244.9.249
+    static:
+    - 10.244.9.250
+  - cloud_properties:
+      name: random
+    range: 10.244.9.252/30
+    reserved:
+    - 10.244.9.253
+    static:
+    - 10.244.9.254
+  - cloud_properties:
+      name: random
+    range: 10.244.10.0/30
+    reserved:
+    - 10.244.10.1
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.4/30
+    reserved:
+    - 10.244.10.5
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.8/30
+    reserved:
+    - 10.244.10.9
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.12/30
+    reserved:
+    - 10.244.10.13
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.16/30
+    reserved:
+    - 10.244.10.17
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.20/30
+    reserved:
+    - 10.244.10.21
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.24/30
+    reserved:
+    - 10.244.10.25
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.28/30
+    reserved:
+    - 10.244.10.29
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.32/30
+    reserved:
+    - 10.244.10.33
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.36/30
+    reserved:
+    - 10.244.10.37
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.40/30
+    reserved:
+    - 10.244.10.41
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.44/30
+    reserved:
+    - 10.244.10.45
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.48/30
+    reserved:
+    - 10.244.10.49
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.52/30
+    reserved:
+    - 10.244.10.53
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.56/30
+    reserved:
+    - 10.244.10.57
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.60/30
+    reserved:
+    - 10.244.10.61
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.64/30
+    reserved:
+    - 10.244.10.65
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.68/30
+    reserved:
+    - 10.244.10.69
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.72/30
+    reserved:
+    - 10.244.10.73
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.76/30
+    reserved:
+    - 10.244.10.77
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.80/30
+    reserved:
+    - 10.244.10.81
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.84/30
+    reserved:
+    - 10.244.10.85
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.88/30
+    reserved:
+    - 10.244.10.89
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.92/30
+    reserved:
+    - 10.244.10.93
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.96/30
+    reserved:
+    - 10.244.10.97
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.100/30
+    reserved:
+    - 10.244.10.101
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.104/30
+    reserved:
+    - 10.244.10.105
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.108/30
+    reserved:
+    - 10.244.10.109
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.112/30
+    reserved:
+    - 10.244.10.113
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.116/30
+    reserved:
+    - 10.244.10.117
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.120/30
+    reserved:
+    - 10.244.10.121
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.124/30
+    reserved:
+    - 10.244.10.125
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.128/30
+    reserved:
+    - 10.244.10.129
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.132/30
+    reserved:
+    - 10.244.10.133
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.136/30
+    reserved:
+    - 10.244.10.137
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.140/30
+    reserved:
+    - 10.244.10.141
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.144/30
+    reserved:
+    - 10.244.10.145
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.148/30
+    reserved:
+    - 10.244.10.149
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.152/30
+    reserved:
+    - 10.244.10.153
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.156/30
+    reserved:
+    - 10.244.10.157
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.160/30
+    reserved:
+    - 10.244.10.161
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.164/30
+    reserved:
+    - 10.244.10.165
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.168/30
+    reserved:
+    - 10.244.10.169
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.172/30
+    reserved:
+    - 10.244.10.173
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.176/30
+    reserved:
+    - 10.244.10.177
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.180/30
+    reserved:
+    - 10.244.10.181
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.184/30
+    reserved:
+    - 10.244.10.185
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.188/30
+    reserved:
+    - 10.244.10.189
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.192/30
+    reserved:
+    - 10.244.10.193
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.196/30
+    reserved:
+    - 10.244.10.197
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.200/30
+    reserved:
+    - 10.244.10.201
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.204/30
+    reserved:
+    - 10.244.10.205
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.208/30
+    reserved:
+    - 10.244.10.209
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.212/30
+    reserved:
+    - 10.244.10.213
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.216/30
+    reserved:
+    - 10.244.10.217
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.220/30
+    reserved:
+    - 10.244.10.221
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.224/30
+    reserved:
+    - 10.244.10.225
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.228/30
+    reserved:
+    - 10.244.10.229
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.232/30
+    reserved:
+    - 10.244.10.233
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.236/30
+    reserved:
+    - 10.244.10.237
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.240/30
+    reserved:
+    - 10.244.10.241
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.244/30
+    reserved:
+    - 10.244.10.245
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.248/30
+    reserved:
+    - 10.244.10.249
+    static: []
+  - cloud_properties:
+      name: random
+    range: 10.244.10.252/30
+    reserved:
+    - 10.244.10.253
+    static: []
 
 resource_pools:
 - name: default
@@ -30,12 +856,12 @@ update:
   canaries: 1
   canary_watch_time: 60000
   update_watch_time: 60000
-  max_in_flight: 10
+  max_in_flight: 3
 
 jobs:
   - name: main
     templates:
-    - {name: main, release: main}
+    - {name: broker, release: redis-broker-release}
     instances: 1
     resource_pool: default
     networks:

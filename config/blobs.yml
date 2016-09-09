@@ -7,3 +7,11 @@ redis/redis-3.2.3.tar.gz:
   object_id: 8370392f-2696-497a-b181-91597496ab7b
   sha: 92d6d93ef2efc91e595c8bf578bf72baff397507
   size: 1541401
+go/go1.6.3.linux-amd64.tar.gz:
+  object_id: c04832e3-3cb0-45a4-b9ff-8d22b1cd0c7f
+  sha: 5e916ba4dd8c2fc43beafca4c08b334c4d0686f3
+  size: 84856920
+go1.6.3.linux-amd64.tar.gz:
+  object_id: b11e9a5a-616c-4fb0-b423-489da9233858
+  sha: 5e916ba4dd8c2fc43beafca4c08b334c4d0686f3
+  size: 84856920

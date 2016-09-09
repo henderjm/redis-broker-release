@@ -1,0 +1,31 @@
+---
+packages:
+- name: go
+  version: 7c2d4df8d08054020435f51b30c0fc19d1ae301c
+  fingerprint: 7c2d4df8d08054020435f51b30c0fc19d1ae301c
+  sha1: 623eeb7b17fd456df7064fefffcfac41bf1df80b
+  dependencies: []
+- name: main
+  version: 803c6d30b4791b3c466e72d80358de49ce75ce63
+  fingerprint: 803c6d30b4791b3c466e72d80358de49ce75ce63
+  sha1: 4c9418c4b2bb4717c2eebc3eba946613f0882d78
+  dependencies:
+  - go
+- name: redis
+  version: 70803bd0ef4a5141c77ddda778b495974a852f04
+  fingerprint: 70803bd0ef4a5141c77ddda778b495974a852f04
+  sha1: 3007d9c9f1bc530104cec4fc0303531213d40376
+  dependencies: []
+jobs:
+- name: broker
+  version: ad77e75b0265bdb5c036e6bdf8f7861b488247f9
+  fingerprint: ad77e75b0265bdb5c036e6bdf8f7861b488247f9
+  sha1: 7bbe0de98e787130b59df7ac135c85556be4a543
+license:
+  version: bf89c048762cd246b3d27acdc67830307cf0a558
+  fingerprint: bf89c048762cd246b3d27acdc67830307cf0a558
+  sha1: 91c429561431836d729b7fb08c86a16983e795f3
+commit_hash: cf3906a2
+uncommitted_changes: true
+name: redis-broker-release
+version: 0+dev.69

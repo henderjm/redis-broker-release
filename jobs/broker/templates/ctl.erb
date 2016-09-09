@@ -1,23 +1,17 @@
-RUN_DIR=/var/vcap/sys/run/main
-LOG_DIR=/var/vcap/sys/log/main
-PIDFILE=$RUN_DIR/pid
+set -e -x
+
+RUN_DIR=/var/vcap/sys/run/broker
+LOG_DIR=/var/vcap/sys/log/broker
+PIDFILE=$RUN_DIR/broker.pid
 
 RUNAS=vcap
 
-function pid_exists() {
- ps -p $1 &> /dev/null
-}
-
 case $1 in
   start)
-  mkdir -p $RUN_DIR $LOG_DIR
-      chown -R vcap:vcap $RUN_DIR $LOG_DIR
-
-      echo $$ > $PIDFILE
-
-      cd /var/vcap/packages/main
-
-      echo $PWD
+    mkdir -p $RUN_DIR $LOG_DIR
+    chown -R vcap:vcap $RUN_DIR $LOG_DIR
+    echo $$ > $PIDFILE
+    go run /var/vcap/packages/main/src/github.com/henderjm/redis-broker
   ;;
   stop)
   PID=$(head -1 $PIDFILE)

@@ -1,23 +1,21 @@
 # abort script on any command that exits with a non zero value
 set -e
+set -u
+set -x
 
-cd ${BOSH_INSTALL_TARGET}PACKAGE_NAME=github.com/henderjm/redis-broker
+PACKAGE_NAME=github.com/henderjm/redis-broker
 PACKAGE_DIR=${BOSH_INSTALL_TARGET}/src/${PACKAGE_NAME}
 
 mkdir -p $(dirname $PACKAGE_DIR)
 
-cp -a $(basename $PACKAGE_NAME)/ $PACKAGE_DIR
+cp -a /var/vcap/data/compile/main/$PACKAGE_NAME/ $PACKAGE_DIR
 
-export GOROOT=$(readlink -nf /var/vcap/packages/go)
-export GOPATH=$BOSH_INSTALL_TARGET:${PACKAGE_DIR}/Godeps/_workspace
+export GOROOT='/var/vcap/packages/go/go'
+ls $GOROOT
+
+export GOPATH=$BOSH_INSTALL_TARGET
 export PATH=$GOROOT/bin:$PATH
+go install ${PACKAGE_NAME}
 
-BINARIES=( broker processmonitor agent backup restore configmigrator )
-for BINARY in "${BINARIES[@]}"
-do
-  go install ${PACKAGE_NAME}/cmd/${BINARY}
-done
-
-  # clean up source artifacts
-  # rm -rf ${BOSH_INSTALL_TARGET}/src ${BOSH_INSTALL_TARGET}/pkg
+# clean up sources that were copied
 

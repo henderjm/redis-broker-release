@@ -1,5 +1,4 @@
-check process main
-  with pidfile /var/vcap/sys/run/main/pid
-  start program "/var/vcap/jobs/broker/bin/ctl start"
-  stop program "/var/vcap/jobs/broker/bin/ctl stop"
-  group vcap
+check process broker
+  with pidfile /var/vcap/sys/run/broker/pid
+  start program "/var/vcap/jobs/broker/bin/ctl.erb start"
+  stop program "/var/vcap/jobs/broker/bin/ctl.erb stop"

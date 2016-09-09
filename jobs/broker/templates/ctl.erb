@@ -11,7 +11,11 @@ case $1 in
     mkdir -p $RUN_DIR $LOG_DIR
     chown -R vcap:vcap $RUN_DIR $LOG_DIR
     echo $$ > $PIDFILE
-    go run /var/vcap/packages/main/src/github.com/henderjm/redis-broker
+    export GOROOT='/var/vcap/packages/go/go'
+    export GOPATH='/var/vcap/packages/main'
+    export PATH=$GOROOT/bin:$PATH
+
+    go run /var/vcap/packages/main/src/github.com/henderjm/redis-broker/main.go
   ;;
   stop)
   PID=$(head -1 $PIDFILE)

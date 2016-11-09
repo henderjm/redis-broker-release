@@ -1,10 +1,10 @@
-set -e -x
+#!/bin/bash
 
 RUN_DIR=/var/vcap/sys/run/broker
 LOG_DIR=/var/vcap/sys/log/broker
 PIDFILE=$RUN_DIR/broker.pid
 
-RUNAS=vcap
+TIMESTAMP=/bin/date
 
 case $1 in
   start)
@@ -15,8 +15,15 @@ case $1 in
     export GOPATH='/var/vcap/packages/main'
     export PATH=$GOROOT/bin:$PATH
 
-    go run /var/vcap/packages/main/src/github.com/henderjm/redis-broker/main.go
-  ;;
+    echo "$("${TIMESTAMP}"): Starting Redis Service broker" >> "${LOG_DIR}/broker_stdout.log"
+
+    exec chpst -u vcap:vcap \
+    /var/vcap/packages/main/bin/redis-broker \
+    1>> $LOG_DIR/broker_stdout.log \
+    2>> $LOG_DIR/broker_stderr.log \
+    0<&-
+
+    ;;
   stop)
   PID=$(head -1 $PIDFILE)
       if [ ! -z $PID ] && pid_exists $PID; then
